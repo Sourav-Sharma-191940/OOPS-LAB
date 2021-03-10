@@ -3,43 +3,30 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-float power(float a, int b){
-    float res = 1.0;
-    for(; b>0; b--)
-    res= a*res;
-    return res;
-}
+
 float power(float a, float b){
-    float res = 1.0;
-    for(; b>0; b--)
-    res= a*res;
-    return res;
+    return pow(a, b);
 }
- float power(int a, int b){
-    int res = 1;
-    for(; b>0; b--)
-    res= a*res;
-    return res;
-}
-float power(int a, float b){
-    float res = 1.0;
-    for(; b>0; b--)
-    res= a*res;
-    return res;
+float power(float a){
+     int b = 2;
+     return pow(a, b);
 }
 void display(float data)
 {
-    cout<<"\nYour Answer is = "<<data<<endl<<endl;
+    cout<<" = "<<data;
 }
 int main(){
-    float a, b;
+    float a, b, result, res_default;
     cout<<"\nEnter the value of base ";
     cin>>a;
      cout<<"\nEnter the value of power ";
     cin>>b;
-
-     float power = pow(a, b);
-    display(power);
-    
+     cout<<"\nYour result is ";
+    result= power(a, b);
+    display(result);
+    cout<<"\nResult with default power value(2) ";
+    res_default= power(a);
+    display(res_default);
+    return 0;
 }
 
