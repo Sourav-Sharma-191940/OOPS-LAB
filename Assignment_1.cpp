@@ -9,11 +9,10 @@ int factorial(int n){
         return n*factorial(n-1);
 }
 int main(){
-    int number;
-    double result;
+    int number, result;
     cout<<"\nEnter the number for calculate its factorial- ";
     cin>>number;
     result = factorial(number);
-    cout<<"The factorial of "<<number<<" is " << result;
+    cout<<"The factorial of "<<number<<" is " << result<<endl<<endl;
     return 0;
 }
