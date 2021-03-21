@@ -1,4 +1,4 @@
-//Write a program to make the use of inline function.
+//Program 2:- Write a program to make the use of inline function.
 #include <iostream>
 #include <cmath>
 using namespace std;
